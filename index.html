@@ -6,6 +6,16 @@
 * {
   box-sizing: border-box;
 }
+.btn {
+        cursor: pointer;
+        border: 0px solid #3498db;
+        background-color: transparent;
+        position:absolute;
+        height: 55px;
+        width: 200px;
+        color: #3498db;
+        font-size: 1.5;
+}
 a:link {
   text-decoration: none;
 }
@@ -27,8 +37,9 @@ a:active {
 }
 .menuitem {
   padding: 1px;
-  margin-top: 60px;
-  border-bottom: 1px solid #f1f1f1;
+  text-align:justify;
+  margin-top: 75px;
+  border-bottom: 1px solid #d9d9d9;
 }
 .main {
   float: left;
@@ -39,6 +50,7 @@ a:active {
 }
 .right {
   background-color: lightgrey;
+  border-radius: 5px;
   float: left;
   width: 30%;
   padding: 10px 15px;
@@ -65,26 +77,36 @@ a:active {
 </head>
 <body style="font-family:Verdana;">
 
-<div style="background-color:#1d2121;left:-9px;height:75px;width:100%;top:-21px;position:fixed;color:white;">
-  <h1><img src="https://cdn.discordapp.com/attachments/487668744362131457/938734576665260032/hoefler-text-regular2.png" alt="NP Wiki Logo" style="width:200px;"></h1>
+<div style="background-color:#1d2121;height:75px;width:100%;left:0px;top:-21px;position:fixed;color:white;">
+  <h1>
+      <form action="https://google.com">
+          <button class="btn"></button>
+          </form>
+          <img src="https://cdn.discordapp.com/attachments/487668744362131457/938734576665260032/hoefler-text-regular2.png" alt="NP Wiki Logo" style="width:200px;"></h1>
   <h3></h3>
 </div>
 
 <div style="overflow:auto">
   <div class="menu">
-    <div class="menuitem">
-        <p><a href="#" class="button">Items</a></p>
-        <p><a href="#" class="button">Players</a></p>
-        <p><a href="#" class="button">Update history</a></p>
-        <p><a href="#" class="button">Lore</a></p>
-        </div>
+    <div class="menuitem"><a href="#" class="button">Items</a></div>
+    <p></p>
+        <div style="border-bottom: 1px solid #d9d9d9;"><a href="#" class="button">Players</a></div>
+        <p></p>
+        <div style="border-bottom: 1px solid #d9d9d9;"><a href="#" class="button">Update history</a></div>
+        <p></p>
+        <div style="border-bottom: 1px solid #d9d9d9;"><a href="#" class="button">Lore</a></div>
+        <p></p>
+        <div style="border-bottom: 1px solid #d9d9d9;"><a href="#" class="button">FAQ</a></div>
   </div>
 
   <div class="main">
     <h2>About us</h2>
     <p>We are the official, community driven, Nerevarine Prophecies Wikipedia.</p>
-    <p2>Nerevarine Prophecies is a Tes3MP server made by Learworlf. Random text here because I don't really know what I could fill the page with. But it's temporary text so it's fine I guess. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p2>
+    <p>Nerevarine Prophecies is a Tes3MP server made by Learworlf. Random text here because I don't really know what I could fill the page with. But it's temporary text so it's fine I guess. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+    <p></p>
     <img src="https://uploadvr.com/wp-content/uploads/2020/11/morrowind-steam-screenshot-guard-armor.jpg" style="width:100%">
+    <p></p>
+    <p>To be, or not to be: that is the question: whether 'tis nobler in the mind to suffer the slings and arrows of outrageous fortune, or to take arms against a sea of troubles, and by opposing end them? To die: to sleep; no more; and, by a sleep to say we end the heart-ache and the thousand natural shocks that flesh is heir to, 'tis a consummation devoutly to be wish'd. To die, to sleep; to sleep: perchance to dream: ay, there's the rub; for in that sleep of death what dreams may come when we have shuffled off this mortal coil, must give us pause. There's the respect that makes calamity of so long a life; for who would bear the whips and scorns of time, the oppressor's wrong, the proud man's contumely, the pangs of dispriz'd love, the law's delay, the insolence of office, and the spurns that patient merit of the unworthy takes, when he himself might his quietus make with a bare bodkin? Who would fardels bear, to grunt and sweat under a weary life, but that the dread of something after death, the undiscover'd country from whose bourn no traveller returns, puzzles the will, and makes us rather bear those ills we have, than fly to others that we know not of? Thus consience doth make cowards of us all; and thus the native hue of resolution is sicklied o'er with the pale cast of thought, and enterprises of great pith and moment with this regard their currents turn awry, and lose the name of action.</p>
   </div>
   <div class="right">
     <h2>Item Name</h2>
@@ -99,8 +121,8 @@ a:active {
 
 </div>
 
-
-<div style="background-color:#1d2121;text-align:center;padding:10px;margin-top:7px;font-size:12px;color:white;">Wealth beyond measure outlander.</div>
+<p></p>
+<div style="background-color:#1d2121;height:150px;width:100%;left:0px;position:absolute;color:white;text-align:center;">Wealth beyond measure outlander.</div>
 
 </body>
 </html>
