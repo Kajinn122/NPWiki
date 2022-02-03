@@ -1,149 +1,77 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nerevarine Prophecies Wiki</title>
-<body>
-    <style>
-         body { background-color: rgb(13, 13, 57);}
-    </style>
-    
-    <style>
-    .wrapper {
-margin-right: auto; /* 1 */
-margin-left: auto; /* 1 */
-max-width:1160px; /* 2 */
-padding-right: 10px; /* 3 */
-padding-left: 10px; /* 3 */
-}
-</style>
-
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-.button {
-  position: absolute;
-  background-color: rgb(88, 101, 242) !important;
-  top: 5px;
-  margin-left: 70px;
-  margin-top: 350px;
-  padding: 12px 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-  background: https://i.redd.it/4b4eu6u1lzt71.jpg;
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
 }
 
-.button:hover {background-color: rgb(255, 255, 255);
-               text-decoration: none;
-               color: rgb(13, 13, 57);
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
 }
 </style>
+</head>
+<body style="font-family:Verdana;">
 
-
-<style>
-a:link {
-  color: rgb(240, 230, 140);
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: rgb(240, 230, 140);
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: rgb(240, 230, 140);
-  background-color: transparent;
-  text-decoration: underline;
-}
-</style>
-
-<div style = "position:absolute; left:100px; top:152px; color: white; font-family: Lucida Console; font-size:30px; font-weight: bold; letter-spacing: 1px; transform:scale(1.1,1.2);">
-         The Nerevarine Prophecies Wiki
+<div style="background-color:#262626;padding:1px; color: white;">
+  <h1>NP WikipediA</h1>
+  <h3></h3>
 </div>
 
-<div style = "position:absolute; left:100px; top:250px; color: white; font-family: Lucida Console; font-size:14px; font-weight: 0; letter-spacing: 1px; transform:scale(1.1,1.2);">
-         We are the official <a href="https://www.google.com" style="text-decoration:none">Nerevarine Prophecies</a> encyclopedia,
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">Items</div>
+    <div class="menuitem">Players</div>
+    <div class="menuitem">Update history</div>
+    <div class="menuitem">Lore</div>
+  </div>
+
+  <div class="main">
+    <h2>About us</h2>
+    <p>We are the official, community driven, Nerevarine Prophecies Wikipedia.</p>
+    <img src="img_5terre.jpg" style="width:100%">
+  </div>
+
 </div>
 
-<div style = "position:absolute; left:85px; top:20px; color: white; font-family: Lucida Console; font-size:14px; font-weight: 0; letter-spacing: 1px; transform:scale(1.1,1.2);">
-         Logo goes here.
-</div>
 
-<div style = "position:absolute; left:91px; top:280px; color: white; font-family: Lucida Console; font-size:14px; font-weight: 0; letter-spacing: 1px; transform:scale(1.1,1.2);">
-         written and preserved by the community. 
-</div>
-
-<div style = "position:absolute; left:900px; top:585px; color: white; font-family: Lucida Console; font-size:14px; font-weight: 0; letter-spacing: 1px; transform:scale(1.1,1.2);">
-         "Each event is proceeded
-</div>
-
-<div style = "position:absolute; left:901px; top:605px; color: white; font-family: Lucida Console; font-size:14px; font-weight: 0; letter-spacing: 1px; transform:scale(1.1,1.2);">
-         by Prophecy. But without the
-</div>
-
-<div style = "position:absolute; left:900px; top:625px; color: white; font-family: Lucida Console; font-size:14px; font-weight: 0; letter-spacing: 1px; transform:scale(1.1,1.2);">
-         hero, there is no Event."
-</div>
-
-<div style = "position:absolute; left:935px; top:650px; color: white; font-family: Lucida Console; font-size:11px; font-weight: 0; letter-spacing: 1px; transform:scale(1.1,1.2);">
-                  - Zurin Arctus | the Underking
-</div>
-
-<div style = "position:absolute; text-align: center; left:600px; top:850px; color: white; font-family: Lucida Console; font-size:14px; font-weight: 900; letter-spacing: 1px; transform:scale(1.5,1.5);">
-         ABOUT US 
-</div>
-
-<style>
-
-body {
-  overflow-x: hidden;
-}
-
-article {
-  max-width: 700px;
-  margin: 3rem auto;
-  padding: 0 2rem;
-}
-
-.full-screen-width {
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  max-width: 120vw;
-  width: 120vw;
-}
-
-img {
-  border: 0px solid #ddd;
-  margin: auto -60px;
-  margin-top: -10px;
-  height: 750px;
-  width: 1580px;
-  padding: 0px;
-}
-
-</style>
-
-<img src="https://i.redd.it/m1osya1x9zt71.png" alt="LandingMain">
-
-<!-- <a href="https://www.google.com" class="button";>Login</a> -->
-
-<a href="https://discord.gg/FMTT9EB2Mc" class="button";>Join us on Discord!</a>
-
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">Wealth beyond measure outlander.</div>
 
 </body>
-
-</head>
 </html>
