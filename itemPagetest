@@ -1,0 +1,218 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>NP Wikipedia - About us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.btn {
+        cursor: pointer;
+        border: 0px solid #3498db;
+        background-color: transparent;
+        position:absolute;
+        height: 55px;
+        width: 200px;
+        color: #3498db;
+        font-size: 1.5;
+}
+
+.JSBtn {
+  background-color: #d9d9d9;
+  border: solid;
+  border-width: thin;
+  border-color: grey;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+a:link {
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #003366;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+table {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-collapse: collapse;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 1px;
+  text-align:center;
+  color: grey;
+  background-color: ;
+  margin-top: 75px;
+}
+.main {
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+  overflow: hidden;
+  margin-top: 60px;
+  z-index:5;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.right {
+  float: left;
+  width: 30%;
+  padding: 10px 15px;
+  z-index:2;
+  margin-top: 129px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana; background-color: white">
+
+<div style="background-color:#1d2121;height:75px;width:100%;left:0px;top:-21px;position:fixed;color:white;">
+  <h1>
+      <form action="https://google.com">
+          <button class="btn"></button>
+          </form>
+          <img src="https://cdn.discordapp.com/attachments/487668744362131457/938734576665260032/hoefler-text-regular2.png" alt="NP Wiki Logo" style="width:200px;"></h1>
+  <h3></h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">
+    <h style="font-weight: bold; text-align: center !important; color:grey">WIKI CONTENTS</h>
+    <p><a href="items" class="button">Items</a></p>
+    <p><a href="players" class="button">Players</a></p>
+    <p><a href="updates" class="button">Updates</a></p>
+    <p><a href="lore" class="button">Lore</a></p>
+    <p><a href="faq" class="button">FAQ</a></p>
+    
+    </div>
+  </div>
+
+  <div class="main">
+    <h2>Whitefang</h2>
+    <p>Path: NPWiki / Items / Whitefang</p>
+    <p>Whitefang is a unique long blade, two handed sword. It was previously obtainable from the New Life Festival Event from the weapons chest.</p>
+    <p>It looks the same as the Nordic Claymore.</p>
+    <img src="https://cdn.discordapp.com/attachments/938776151751557143/941370912018673674/unknown.png" style="width:100%">
+    <p style="font-size:12px; font-style:italic;">A player holding Whitefang.</p>
+    <h2>Special effects</h2>
+    <p>While a player has Whitefang equipped, a semi-transparent snow wolf with the name of <i>White Fang</i> will be summoned.</p>
+    <img src="https://cdn.discordapp.com/attachments/938776151751557143/941370672997875822/unknown.png" style="width:100%">
+    <p style="font-size:12px; font-style:italic;">A picture of White Fang</p>
+  </div>
+  <div class="right">
+    <table style="margin-top: -80px;">
+        <tr>
+            <th colspan="3" style="background:#FFDEAD">Whitefang</th>
+        </tr>
+        <tr>
+            <td style="background: black" colspan="3"><img src="https://cdn.discordapp.com/attachments/938776151751557143/941371117141098496/unknown.png" style="display: block; width: 100%; height: 100%"></td>
+        </tr>
+        <tr>
+            <th style="background:#FFDEAD">Weight</th>
+            <th style="background:#FFDEAD">Health</th>
+            <th style="background:#FFDEAD">Base value</th>
+        </tr>
+        <tr>
+            <td style="text-align:center">30</td>
+            <td style="text-align:center">6400</td>
+            <td style="text-align:center">122021</td>
+        </tr>
+        <tr>
+            <th style="background:#FFDEAD">Released</th>
+            <td colspan="2">25 December 2021</td>
+        </tr>
+        <tr>
+            <th style="background:#FFDEAD">Speed</th>
+            <td colspan="2">125%</td>
+        </tr>
+        <tr>
+            <th rowspan="3" style="background:#FFDEAD">Enchantments</th>
+            <td colspan="2">Weakness to normal weapons 200% for 6 secs on Target</td>
+        </tr>
+        <tr>
+            <td colspan="2">Paralyze for 1 sec on Target</td>
+        </tr>
+        <tr>
+            <td colspan="2">Fortify Attack 100 pts for 3 secs on Self</td>
+        </tr>
+        <tr>
+            <th style="background:#FFDEAD">Charge</th>
+            <td colspan="2">1/1</td>
+        </tr>
+        <tr>
+            <th style="background:#FFDEAD">Reach</th>
+            <td colspan="2">6 ft</td>
+        </tr>
+        <tr>
+            <th style="background:#FFDEAD">Chop</th>
+            <th style="background:#FFDEAD">Slash</th>
+            <th style="background:#FFDEAD">Thrust</th>
+        </tr>
+        <tr>
+            <td style="text-align:center">1-40</td>
+            <td style="text-align:center">1-25</td>
+            <td style="text-align:center">1-18</td>
+        </tr>
+        <tr>
+            <th style="background:#FFDEAD">Weapon type</th>
+            <td colspan="2"><a href="#" class="button">One-Handed</a> <a href="#" class="button">Long Blade</a></td>
+        </tr>
+        </table>
+    
+  </div>
+
+
+</div>
+
+<p></p>
+<div style="background-color:#1d2121;height:150px;width:100%;left:0px;position:absolute;color:white;font-weight:bold;padding-top:25px;text-align:center;">This page was last edited on 5 February 2022.</div>
+
+</body>
+</html>
