@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 50px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  border-radius:5px;
+  overflow:hidden;
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 0px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card .cardimg{
+      padding:0px;
+      object-fit:cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height:100%;
+      width:100%;
+      display: inline-block;
+      overflow:hidden;
+      -webkit-filter: grayscale(100%);
+      -webkit-transition: .5s ease-in-out;
+      -moz-filter: grayscale(100%); 
+      -moz-transition: .5s ease-in-out;
+      -o-filter: grayscale(100%); 
+      -o-transition: .5s ease-in-out;
+      filter: grayscale(100%);
+      transition: transform .5s, 1.5s ease-in-out;
+}
+
+.card:hover .cardimg{
+      height:100%;
+      width:100%;
+      display: inline-block;
+      overflow:hidden;
+      -webkit-filter: grayscale(0%);
+      -webkit-transition: 1.5s ease-in-out;
+      -moz-filter: grayscale(0%);
+      -moz-transition: 1.5s ease-in-out;
+      -o-filter: grayscale(0%);
+      -o-transition: .5s ease-in-out;
+      filter: grayscale(0%);
+      transform: scale(1.1)
+}
+.card:hover {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    cursor: pointer;
+}
+.background-gradient {
+    position:relative;
+    float: left;
+}
+.background-gradient:before {
+    content: '';
+    padding:0px;
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background: linear-gradient(0deg, rgba(241,241,241,1) 10%, rgba(255,255,255,0) 50%);
+    z-index: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+        <div class="cardimg">
+            <div class ="background-gradient">
+                <img src="https://media.moddb.com/images/mods/1/17/16542/Silver.png" style="background-image; height:100%; width:100%; border-top-left-radius:10px;" alt="CardImg1">
+                </div>
+            </div>
+      <h3>Weapons</h3>
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <div class="cardimg">
+            <div class ="background-gradient">
+                <img src="https://static.wikia.nocookie.net/elderscrolls/images/f/f6/Adamantium_Armor_Morrowind.png" style="background-image; height:100%; width:100%; border-top-left-radius:10px;" alt="CardImg1">
+                </div>
+            </div>
+      <h3>Armor</h3>
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <div class="cardimg">
+            <div class ="background-gradient">
+                <img src="https://static.wikia.nocookie.net/elderscrolls/images/8/8e/Gulitte_Cienne.png" style="background-image; height:100%; width:100%; border-top-left-radius:10px;" alt="CardImg1">
+                </div>
+            </div>
+      <h3>Clothing</h3>
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <div class="cardimg">
+            <div class ="background-gradient">
+                <img src="https://static.wikia.nocookie.net/elderscrolls/images/0/0d/Flame_Atronach_%28Morrowind%29.png" style="background-image; height:100%; width:100%; border-top-left-radius:10px;" alt="CardImg1">
+                </div>
+            </div>
+      <h3>Boss Items</h3>
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
