@@ -1,15 +1,118 @@
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
-<title>NP Wikipedia - Items</title>
+<title>NP Wikipedia - About us</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 * {
   box-sizing: border-box;
 }
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 15px;
+}
+
+.column > div {
+ 
+  padding: 0px 0;
+  font-size: 15px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */m
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  border-radius:5px;
+  width:110px;
+  display: inline-block;
+  overflow:hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 0px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card .cardimg{
+      padding:0px;
+      object-fit:cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height:100%;
+      width:100%;
+      display: inline-block;
+      overflow:hidden;
+      -webkit-filter: grayscale(100%);
+      -webkit-transition: .5s ease-in-out;
+      -moz-filter: grayscale(100%); 
+      -moz-transition: .5s ease-in-out;
+      -o-filter: grayscale(100%); 
+      -o-transition: .5s ease-in-out;
+      filter: grayscale(100%);
+      transition: transform .5s, 1.5s ease-in-out;
+}
+
+.card:hover .cardimg{
+      height:100%;
+      width:100%;
+      display: inline-block;
+      overflow:hidden;
+      -webkit-filter: grayscale(0%);
+      -webkit-transition: 1.5s ease-in-out;
+      -moz-filter: grayscale(0%);
+      -moz-transition: 1.5s ease-in-out;
+      -o-filter: grayscale(0%);
+      -o-transition: .5s ease-in-out;
+      filter: grayscale(0%);
+      transform: scale(1.1)
+}
+.card:hover {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    cursor: pointer;
+}
+.background-gradient {
+    position:relative;
+    float: left;
+}
+.background-gradient:before {
+    content: '';
+    padding:0px;
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background: linear-gradient(0deg, rgba(241,241,241,1) 10%, rgba(255,255,255,0) 50%);
+    z-index: 1;
+}
+
 .btn {
         cursor: pointer;
         border: 0px solid #3498db;
@@ -19,6 +122,21 @@
         width: 200px;
         color: #3498db;
         font-size: 1.5;
+}
+
+.JSBtn {
+  background-color: #d9d9d9;
+  border: solid;
+  border-width: thin;
+  border-color: grey;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 a:link {
   color: #1E90FF;
@@ -32,38 +150,50 @@ a:visited {
 
 a:hover {
   color: #003366;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:active {
   color: #1E90FF;
   text-decoration: none;
 }
+
+table, td, th {
+  border: 1px solid black;
+}
+table {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-collapse: collapse;
+}
+
 .menu {
   float: left;
   width: 20%;
 }
 .menuitem {
   padding: 1px;
-  text-align:justify;
+  text-align:center;
   color: grey;
+  background-color: ;
   margin-top: 75px;
-  border-bottom: 1px solid #d9d9d9;
 }
 .main {
   float: left;
   width: 50%;
   padding: 0 20px;
   overflow: hidden;
-  margin-top: 50px;
+  margin-top: 60px;
+  z-index:5;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 .right {
-  background-color: lightgrey;
-  border-radius: 5px;
   float: left;
   width: 30%;
   padding: 10px 15px;
-  margin-top: 55px;
+  z-index:2;
+  margin-top: 129px;
 }
 
 @media only screen and (max-width:800px) {
@@ -75,20 +205,26 @@ a:active {
   .right {
     width: 100%;
   }
+  .column {
+      width: 35%;
+  }
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
   .menu, .main, .right {
     width: 100%;
   }
+  .column {
+      width: 50%;
+  }
 }
 </style>
 </head>
-<body style="font-family:Verdana;">
+<body style="font-family:Verdana; background-color: white">
 
-<div style="background-color:#1d2121;height:75px;width:100%;left:0px;top:-21px;position:fixed;color:white;">
+<div style="background-color:#1d2121;height:75px;width:100%;left:0px;top:-21px;position:fixed;color:white; overflow:hidden; z-index: 1;">
   <h1>
-      <form action="#">
+      <form action="https://google.com">
           <button class="btn"></button>
           </form>
           <img src="https://cdn.discordapp.com/attachments/487668744362131457/938734576665260032/hoefler-text-regular2.png" alt="NP Wiki Logo" style="width:200px;"></h1>
@@ -97,78 +233,109 @@ a:active {
 
 <div style="overflow:auto">
   <div class="menu">
-    <div class="menuitem"><a href="items" class="button">Items</a></div>
-    <p></p>
-        <div style="border-bottom: 1px solid #d9d9d9;"><a href="players" class="button">Players</a></div>
-        <p></p>
-        <div style="border-bottom: 1px solid #d9d9d9;"><a href="updates" class="button">Update history</a></div>
-        <p></p>
-        <div style="border-bottom: 1px solid #d9d9d9;"><a href="lore" class="button">Lore</a></div>
-        <p></p>
-        <div style="border-bottom: 1px solid #d9d9d9;"><a href="faq" class="button">FAQ</a></div>
+    <div class="menuitem">
+    <h style="font-weight: bold; text-align: center !important; color:grey">WIKI CONTENTS</h>
+    <p><a href="items" class="button">Items</a></p>
+    <p><a href="players" class="button">Players</a></p>
+    <p><a href="updates" class="button">Updates</a></p>
+    <p><a href="lore" class="button">Lore</a></p>
+    <p><a href="faq" class="button">FAQ</a></p>
+    
+    </div>
   </div>
 
   <div class="main">
-    <h2>Item list</h2>
-    <p style="font-weight:bold;">Armor:</p>
-    <p><a href="#" class="button">Light armor</a></p>
-    <p><a href="#" class="button">Medium armor</a></p>
-    <p><a href="#" class="button">Heavy armor</a></p>
-    <p></p>
-    
-    <p style="font-weight:bold;">Weapons:</p>
-    <p><a href="#" class="button">Long blade weapons</a></p>
-    <p><a href="#" class="button">Blunt weapons</a></p>
-    <p><a href="#" class="button">Staves</a></p>
-    <p><a href="#" class="button">Spears</a></p>
-    <p><a href="#" class="button">Axes</a></p>
-    <p><a href="#" class="button">Bows</a></p>
-    <p><a href="#" class="button">Throwing weapons</a></p>
-    <p></p>
-    
-    <p style="font-weight:bold;">Clothing:</p>
-    <p><a href="#" class="button">Robes</a></p>
-    <p><a href="#" class="button">Shirts</a></p>
-    <p><a href="#" class="button">Skirts</a></p>
-    <p><a href="#" class="button">Shoes</a></p>
-    <p><a href="#" class="button">Pants</a></p>
-    <p><a href="#" class="button">Amulets</a></p>
-    <p><a href="#" class="button">Rings</a></p>
-    <p><a href="#" class="button">Belts</a></p>
-    <p><a href="#" class="button">Gloves</a></p>
-    <p></p>
-    
-    <p style="font-weight:bold;">Event items:</p>
-    <p><a href="#" class="button">Heart's Day</a></p>
-    <p><a href="#" class="button">Independence Day</a></p>
-    <p><a href="#" class="button">Halloween</a></p>
-    <p><a href="#" class="button">New Life Festival</a></p>
-    <p></p>
-    
-    <p style="font-weight:bold;">Boss items:</p>
-    <p><a href="#" class="button">Crab God</a></p>
-    <p><a href="#" class="button">Dremora Camp Boss</a></p>
-    <p><a href="#" class="button">Skree</a></p>
-    <p><a href="#" class="button">Easy Ice Boss</a></p>
-    <p><a href="#" class="button">Easy Fire Boss</a></p>
-    <p><a href="#" class="button">Easy Shock Boss</a></p>
-    <p><a href="#" class="button">Hard Ice Boss</a></p>
-    <p><a href="#" class="button">Hard Fire Boss</a></p>
-    <p><a href="#" class="button">Hard Shock Boss</a></p>
-    <p></p>
-    
-    <p style="font-weight:bold;">Other items:</p>
-    <p><a href="#" class="button">Fishing items</a></p>
-    <p><a href="#" class="button">Tradeskill items</a></p>
-    <p><a href="#" class="button">Miscellanous</a></p>
-    <p></p>
+      <h2>Items</h2>
+      
+      <div class="row">
+  <div class="column">
+    <div class="card">
+        <div class="cardimg">
+            <div class ="background-gradient">
+                <img src="https://static.wikia.nocookie.net/elderscrolls/images/f/f6/Adamantium_Armor_Morrowind.png" style="background-image; height:100%; width:100%; border-top-left-radius:10px;border-top-right-radius:10px;" alt="CardImg2">
+                </div>
+            </div>
+      <h3>Weapons</h3>
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <div class="cardimg">
+            <div class ="background-gradient">
+                <img src="https://static.wikia.nocookie.net/elderscrolls/images/f/f6/Adamantium_Armor_Morrowind.png" style="background-image; height:100%; width:100%; border-top-left-radius:10px;border-top-right-radius:10px;" alt="CardImg2">
+                </div>
+            </div>
+      <h3>Armor</h3>
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <div class="cardimg">
+            <div class ="background-gradient">
+                <img src="https://static.wikia.nocookie.net/elderscrolls/images/8/8e/Gulitte_Cienne.png" style="background-image; height:100%; width:100%; border-top-left-radius:10px;border-top-right-radius:10px;" alt="CardImg3">
+                </div>
+            </div>
+      <h3>Clothing</h3>
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <div class="cardimg">
+            <div class ="background-gradient">
+                <img src="https://static.wikia.nocookie.net/elderscrolls/images/0/0d/Flame_Atronach_%28Morrowind%29.png" style="background-image; height:100%; width:100%; border-top-left-radius:10px;border-top-right-radius:10px;" alt="CardImg4">
+                </div>
+            </div>
+      <h3>Boss Items</h3>
+      <p></p>
+      <p></p>
+    </div>
     
   </div>
+  
+  <div class="column">
+    <div class="card">
+        <div class="cardimg">
+            <div class ="background-gradient">
+                <img src="https://static.wikia.nocookie.net/elderscrolls/images/0/0d/Flame_Atronach_%28Morrowind%29.png" style="background-image; height:100%; width:100%; border-top-left-radius:10px;border-top-right-radius:10px;" alt="CardImg5">
+                </div>
+            </div>
+      <h3>Event Items</h3>
+      <p></p>
+      <p></p>
+    </div>
+    
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <div class="cardimg">
+            <div class ="background-gradient">
+                <img src="https://static.wikia.nocookie.net/elderscrolls/images/0/0d/Flame_Atronach_%28Morrowind%29.png" style="background-image; height:100%; width:100%; border-top-left-radius:10px;border-top-right-radius:10px;" alt="CardImg6">
+                </div>
+            </div>
+      <h3>Other Items</h3>
+      <p></p>
+      <p></p>
+    </div>
+    
+  </div>
+</div>
+  </div>
+
 
 </div>
 
 <p></p>
-<div style="background-color:#1d2121;height:150px;width:100%;left:0px;position:absolute;color:white;font-weight:bold;padding-top:25px;text-align:center;">This page was last edited on 5 February 2022.</div>
+<div style="background-color:#1d2121;height:150px;width:100%;left:0px;position:absolute;color:white;font-weight:bold;padding-top:25px;text-align:center;">This page was last edited on 12 February 2022.</div>
 
 </body>
 </html>
