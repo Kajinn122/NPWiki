@@ -1,9 +1,12 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <title>NP Wikipedia - Items</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+
 <style>
 * {
   box-sizing: border-box;
@@ -256,6 +259,9 @@ table {
   .column {
       width: 35%;
   }
+  .btn {
+      width: 45px !important;
+  }
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
@@ -264,6 +270,9 @@ table {
   }
   .column {
       width: 50%;
+  }
+  .btn {
+      width: 13% !important;
   }
 }
 
