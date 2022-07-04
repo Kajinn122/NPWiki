@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+.btn {
+        cursor: pointer;
+        border: 0px solid #3498db;
+        background-color: transparent;
+        position:absolute;
+        height: 55px;
+        width: 200px;
+        color: #3498db;
+        font-size: 1.5;
+}
+a:link {
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #003366;
+  text-decoration: none;
+}
+
+a:active {
+  color: #1E90FF;
+  text-decoration: none;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 1px;
+  text-align:justify;
+  color: grey;
+  margin-top: 75px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.main {
+  float: left;
+  width: 100%;
+  padding: 0 20px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.right {
+  background-color: lightgrey;
+  border-radius: 5px;
+  float: left;
+  width: 30%;
+  padding: 10px 15px;
+  margin-top: 55px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+button {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 10px 0 0;
+			padding: 10px 30px;
+			background-color: #1abc9c;
+			border: none;
+			border-radius: 5px;
+			color: white;
+			font-size: 14px;
+		}
